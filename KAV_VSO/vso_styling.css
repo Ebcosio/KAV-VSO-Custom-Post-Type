@@ -1,0 +1,39 @@
+/*
+.states-vso-information-wrapper{display: flex; flex-direction: row; flex-wrap: wrap;
+  width: 100%; height: auto; border: none;
+  justify-content: space-between;}*/
+.states-vso-information-wrapper{
+  display: grid;
+   grid-template-columns: 33% 33% 33%;
+   grid-template-rows: auto;
+   grid-gap: 10px;
+}
+
+/*.cpt-state-vso-card{width: 30%; height: auto; margin: 2px; padding: 5px;}*/
+.cpt-state-vso-card{margin: 2px; padding: 5px;}
+
+div.cpt-state-vso-card > .center-vso{text-align: center;}
+
+.cpt-state-vso-card > .cpt-vso-title{margin-top: 5px; margin-bottom: 5px; text-align: center;}
+.cpt-state-vso-card > button.Accordion-trigger{margin-left: auto; margin-right: auto; padding: 4px;
+  border-radius: 5px;}
+/*div.post-content > div.cpt-state-vso-card{text-align: center !important;}*/
+div.cpt-state-vso-card > div.cpt-vso-text{ max-height: 200px; min-height: 25px; overflow: auto;
+  background-color: WhiteSmoke;}
+div.cpt-state-vso-card > .cpt-vso-link {text-align: center; margin-top: 10px;}
+div.cpt-state-vso-card > .cpt-vso-link > a {text-decoration: underline; color: blue;}
+
+  @media only screen and (max-width: 999px) and (min-width: 601px) {
+    .states-vso-information-wrapper{
+      grid-template-columns: 48% 48%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .states-vso-information-wrapper{
+     display: block;
+        }
+   .states-vso-information-wrapper > .cpt-state-vso-card{margin: 10px; margin-left: auto; margin-right: auto;
+     width: 90%;
+         }
+  }
